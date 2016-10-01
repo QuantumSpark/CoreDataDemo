@@ -15,6 +15,16 @@
 		D030A6061D9CB57900F1E54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D030A6041D9CB57900F1E54A /* LaunchScreen.storyboard */; };
 		D030A6111D9CB57900F1E54A /* CoreDataDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6101D9CB57900F1E54A /* CoreDataDemonstrationTests.swift */; };
 		D030A61C1D9CB57900F1E54A /* CoreDataDemonstrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A61B1D9CB57900F1E54A /* CoreDataDemonstrationUITests.swift */; };
+		D030A62A1D9CB5FF00F1E54A /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6291D9CB5FF00F1E54A /* CoreDataHelper.swift */; };
+		D030A62C1D9CC31A00F1E54A /* LaunchPadMembers.json in Resources */ = {isa = PBXBuildFile; fileRef = D030A62B1D9CC31A00F1E54A /* LaunchPadMembers.json */; };
+		D030A6311D9CCD5300F1E54A /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A62D1D9CCD5300F1E54A /* Member+CoreDataProperties.swift */; };
+		D030A6321D9CCD5300F1E54A /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A62E1D9CCD5300F1E54A /* Member.swift */; };
+		D030A6331D9CCD5300F1E54A /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A62F1D9CCD5300F1E54A /* Team+CoreDataProperties.swift */; };
+		D030A6341D9CCD5300F1E54A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6301D9CCD5300F1E54A /* Team.swift */; };
+		D030A6361D9CE3D200F1E54A /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6351D9CE3D200F1E54A /* MemberTableViewCell.swift */; };
+		D030A6381D9F68BD00F1E54A /* AddMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6371D9F68BD00F1E54A /* AddMemberController.swift */; };
+		D030A63A1D9F7F8E00F1E54A /* EditMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A6391D9F7F8E00F1E54A /* EditMemberController.swift */; };
+		D030A63C1D9FABEB00F1E54A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030A63B1D9FABEB00F1E54A /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		D030A6171D9CB57900F1E54A /* CoreDataDemonstrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemonstrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D030A61B1D9CB57900F1E54A /* CoreDataDemonstrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemonstrationUITests.swift; sourceTree = "<group>"; };
 		D030A61D1D9CB57900F1E54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D030A6291D9CB5FF00F1E54A /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		D030A62B1D9CC31A00F1E54A /* LaunchPadMembers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchPadMembers.json; sourceTree = "<group>"; };
+		D030A62D1D9CCD5300F1E54A /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataProperties.swift"; path = "../Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D030A62E1D9CCD5300F1E54A /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Member.swift; path = ../Member.swift; sourceTree = "<group>"; };
+		D030A62F1D9CCD5300F1E54A /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Team+CoreDataProperties.swift"; path = "../Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D030A6301D9CCD5300F1E54A /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = ../Team.swift; sourceTree = "<group>"; };
+		D030A6351D9CE3D200F1E54A /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		D030A6371D9F68BD00F1E54A /* AddMemberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberController.swift; sourceTree = "<group>"; };
+		D030A6391D9F7F8E00F1E54A /* EditMemberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMemberController.swift; sourceTree = "<group>"; };
+		D030A63B1D9FABEB00F1E54A /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,23 @@
 		D030A5F71D9CB57900F1E54A /* CoreDataDemonstration */ = {
 			isa = PBXGroup;
 			children = (
+				D030A62D1D9CCD5300F1E54A /* Member+CoreDataProperties.swift */,
+				D030A62E1D9CCD5300F1E54A /* Member.swift */,
+				D030A62F1D9CCD5300F1E54A /* Team+CoreDataProperties.swift */,
+				D030A6301D9CCD5300F1E54A /* Team.swift */,
 				D030A5F81D9CB57900F1E54A /* AppDelegate.swift */,
 				D030A5FA1D9CB57900F1E54A /* ViewController.swift */,
 				D030A5FC1D9CB57900F1E54A /* Main.storyboard */,
+				D030A63B1D9FABEB00F1E54A /* FilterViewController.swift */,
+				D030A6391D9F7F8E00F1E54A /* EditMemberController.swift */,
+				D030A6371D9F68BD00F1E54A /* AddMemberController.swift */,
+				D030A6351D9CE3D200F1E54A /* MemberTableViewCell.swift */,
 				D030A6021D9CB57900F1E54A /* Assets.xcassets */,
 				D030A6041D9CB57900F1E54A /* LaunchScreen.storyboard */,
 				D030A6071D9CB57900F1E54A /* Info.plist */,
 				D030A5FF1D9CB57900F1E54A /* CoreDataDemonstration.xcdatamodeld */,
+				D030A6291D9CB5FF00F1E54A /* CoreDataHelper.swift */,
+				D030A62B1D9CC31A00F1E54A /* LaunchPadMembers.json */,
 			);
 			path = CoreDataDemonstration;
 			sourceTree = "<group>";
@@ -232,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D030A62C1D9CC31A00F1E54A /* LaunchPadMembers.json in Resources */,
 				D030A6061D9CB57900F1E54A /* LaunchScreen.storyboard in Resources */,
 				D030A6031D9CB57900F1E54A /* Assets.xcassets in Resources */,
 				D030A5FE1D9CB57900F1E54A /* Main.storyboard in Resources */,
@@ -260,8 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D030A5FB1D9CB57900F1E54A /* ViewController.swift in Sources */,
+				D030A6321D9CCD5300F1E54A /* Member.swift in Sources */,
 				D030A6011D9CB57900F1E54A /* CoreDataDemonstration.xcdatamodeld in Sources */,
+				D030A63A1D9F7F8E00F1E54A /* EditMemberController.swift in Sources */,
+				D030A6381D9F68BD00F1E54A /* AddMemberController.swift in Sources */,
+				D030A6331D9CCD5300F1E54A /* Team+CoreDataProperties.swift in Sources */,
+				D030A63C1D9FABEB00F1E54A /* FilterViewController.swift in Sources */,
+				D030A6361D9CE3D200F1E54A /* MemberTableViewCell.swift in Sources */,
+				D030A6341D9CCD5300F1E54A /* Team.swift in Sources */,
+				D030A62A1D9CB5FF00F1E54A /* CoreDataHelper.swift in Sources */,
 				D030A5F91D9CB57900F1E54A /* AppDelegate.swift in Sources */,
+				D030A6311D9CCD5300F1E54A /* Member+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

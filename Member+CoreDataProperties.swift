@@ -14,9 +14,9 @@ import CoreData
 
 extension Member {
 
-    @NSManaged var studentNumber: NSNumber?
     @NSManaged var name: String?
     @NSManaged var dateJoined: NSDate?
     @NSManaged var techLead: NSNumber?
+    @NSManaged var teamName: String?
 
 }

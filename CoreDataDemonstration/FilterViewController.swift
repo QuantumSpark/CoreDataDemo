@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
-class FilterViewController: UIViewController {
+class FilterViewController: UIViewController, UIPickerViewDelegate {
+
+    @IBOutlet weak var FilterPicker: UIPickerView!
+    var filterPredicate: NSPredicate?
+    let filterPickerOption = ["All","TechLead","ios", "android" , "javascript"];
+    var managedObjectContext: NSManagedObjectContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,45 @@ class FilterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return filterPickerOption.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return filterPickerOption[row]
+    }
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (filterPickerOption[row] == "TechLead") {
+            sortByTechLead()
+        } else if (filterPickerOption[row] == "All"){
+            filterPredicate = nil
+        } else {
+            sortByTeam(filterPickerOption[row])
+        }
+        
+       
+    }
+    
+    private func sortByTechLead () {
+        filterPredicate = NSPredicate(format: "techLead = true")
+    }
+    
+    private func sortByTeam (teamName : String) {
+        filterPredicate = NSPredicate(format:"teamName = %@", teamName)
+    }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "backFromFilter") {
+            let controller = segue.destinationViewController as! ViewController
+            controller.filterPredicate = filterPredicate
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -1,0 +1,57 @@
+{
+    "ios": [{
+            "name": "Jon Mercer",
+            "techLead": true,
+            "DateJoined" : "12 Feb 2016 05:08:40 +0000"
+            },
+            {
+            "name": "James Park",
+            "techLead": false,
+            "DateJoined": "12 Sep 2015 05:08:40 +0000"
+            },
+            {
+            "name": "Milton Leung",
+            "techLead": false,
+            "DateJoined": "15 Sep 2015 05:08:40 +0000"
+            },
+            {
+            "name": "Mohamed Ali",
+            "techLead": false,
+            "DateJoined": "18 Sep 2015 05:08:40 +0000"
+            }],
+    
+    
+    "android": [{
+                "name": "Kelvin Chan",
+                "techLead": true,
+                "DateJoined" : "12 Sep 2015 05:08:40 +0000"
+                },
+                {
+                "name": "Jae Kyung Yoo",
+                "techLead": false,
+                "DateJoined": "12 Sep 2016 05:08:40 +0000"
+                },
+                {
+                "name": "Noor Ramley",
+                "techLead": false,
+                "DateJoined": "15 Feb 2016 05:08:40 +0000"
+                },
+                {
+                "name": "Stanley Ye",
+                "techLead": false,
+                "DateJoined": "18 Jun 2016 05:08:40 +0000"
+                }],
+    
+    "javascript": [{
+                   "name": "Jordan Schalm",
+                   "techLead": true,
+                   "DateJoined" : "12 Sep 2015 05:08:40 +0000"
+                   },
+                   {
+                   "name": "Eric Stroczynski",
+                   "techLead": false,
+                   "DateJoined": "12 Feb 2016 05:08:40 +0000"
+                   }]
+    
+    
+}
